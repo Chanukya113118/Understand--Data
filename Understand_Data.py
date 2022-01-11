@@ -8,6 +8,7 @@ def fun(data):
     st.write(data)
     spp.st_profile_report(profile)
 st.write('Understand your Data for better decision making.')
+@st.cache
 def m():
     file=st.file_uploader('Choose the file')
     if file is not None:
