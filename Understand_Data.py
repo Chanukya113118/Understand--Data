@@ -3,6 +3,7 @@ import pandas_profiling as pp
 import streamlit as st
 import streamlit_pandas_profiling as spp
 data=pd.DataFrame()
+@st.cache(allow_output_mutation=True,max_entries=100,ttl=5000)
 def fun(data):
     profile=pp.ProfileReport(data)
     st.write(data)
