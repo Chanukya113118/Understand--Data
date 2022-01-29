@@ -14,7 +14,7 @@ def m():
     if file is not None:
         data=pd.read_csv(file)
         fun(data)
-   except:
+  except:
        print("try again")
 if __name__=='__main__':
     m()
