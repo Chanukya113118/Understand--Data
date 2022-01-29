@@ -15,6 +15,6 @@ def m():
             data=pd.read_csv(file)
             fun(data)
     except:
-        print("try again")
+        st.write("try again")
 if __name__=='__main__':
     m()
