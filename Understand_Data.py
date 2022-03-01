@@ -18,6 +18,7 @@ def m():
            except:
                 try:
                     data=pd.read_excel(file)
+                    st.write('If you did not get report please try CSV file type')
                     fun(data)  
                 except:
                     st.write('')
