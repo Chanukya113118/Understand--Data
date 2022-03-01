@@ -7,7 +7,7 @@ def fun(data):
     profile=pp.ProfileReport(data)
     st.write(data)
     spp.st_profile_report(profile)
-st.title('Understand your Data for better decision making.')
+st.title('Understand Data')
 def m():
     try:
         file=st.file_uploader('Choose the file')
