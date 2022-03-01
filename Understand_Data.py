@@ -17,7 +17,7 @@ def m():
                 fun(data)
            except:
                 try:
-                    data=pd.read_csv(file)
+                    data=pd.read_excel(file)
                     fun(data)  
                 except:
                     st.write('')
