@@ -7,14 +7,21 @@ def fun(data):
     profile=pp.ProfileReport(data)
     st.write(data)
     spp.st_profile_report(profile)
-st.header('Understand your Data for better decision making.')
+st.title('Understand your Data for better decision making.')
 def m():
     try:
         file=st.file_uploader('Choose the file')
         if file is not None:
-            data=pd.read_csv(file)
-            fun(data)
+           try:
+                data=pd.read_csv(file)
+                fun(data)
+            except:
+                try:
+                    data=pd.read_csv(file)
+                    fun(data)  
+                except:
+                    st.write('')
     except:
-        st.write("Enter CSV files only please try again")
+        st.write("Enter CSV or Excel files only please try again")
 if __name__=='__main__':
     m()
