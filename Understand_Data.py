@@ -15,7 +15,7 @@ def m():
            try:
                 data=pd.read_csv(file)
                 fun(data)
-            except:
+           except:
                 try:
                     data=pd.read_csv(file)
                     fun(data)  
