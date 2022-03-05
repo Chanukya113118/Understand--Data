@@ -2,6 +2,7 @@ import pandas as pd
 import pandas_profiling as pp
 import streamlit as st
 import streamlit_pandas_profiling as spp
+st.set_page_config(page_title='Understand Data',page_icon='https://cdn-icons-mp4.flaticon.com/512/6569/6569142.mp4')
 data=pd.DataFrame()
 def fun(data):
     profile=pp.ProfileReport(data)
